@@ -19,10 +19,10 @@ jobs:
           python-version: "3.13"
 
       - name: Install dependencies
-        run: pip install pytest requests pyyaml allure-pytest pytest-rerunfailures pytest-xdist
+        run: pip install flask pytest requests pyyaml allure-pytest pytest-rerunfailures pytest-xdist pytest-html pymysql
 
       - name: Run tests
         run: |
           python mock_server/app.py &
           sleep 2
-          pytest -v --tb=short --sensitive-url='' --env=dev
+          pytest -v --tb=short --env=dev
