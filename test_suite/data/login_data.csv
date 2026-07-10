@@ -1,0 +1,6 @@
+username,password,expected_code
+tester,123456,0
+tester,,1
+,123456,1
+no_user,no_pass,1
+tester,WRONG_PASS,1

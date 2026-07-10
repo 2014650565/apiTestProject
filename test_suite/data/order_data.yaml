@@ -1,0 +1,24 @@
+- product_id: 1
+  quantity: 2
+  expected_total: 178.0
+  desc: "购买 2 本 Python 书"
+
+- product_id: 2
+  quantity: 1
+  expected_total: 399.0
+  desc: "购买 1 个机械键盘"
+
+- product_id: 5
+  quantity: 3
+  expected_total: 2097.0
+  desc: "购买 3 个蓝牙耳机"
+
+- product_id: 999
+  quantity: 1
+  expected_total: null
+  desc: "购买不存在的商品"
+
+- product_id: 4
+  quantity: 1
+  expected_total: null
+  desc: "库存不足"

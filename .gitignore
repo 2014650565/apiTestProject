@@ -1,0 +1,7 @@
+﻿temps/
+reports/
+logs/
+__pycache__/
+.pytest_cache/
+*.pyc
+.reasonix/
