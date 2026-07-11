@@ -25,4 +25,4 @@ jobs:
         run: |
           python mock_server/app.py &
           sleep 2
-          pytest -v --tb=short --env=dev
+          pytest -v -s --tb=short --env=dev
