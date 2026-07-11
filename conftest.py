@@ -7,7 +7,7 @@ def base_url(env_config):
     return env_config["base_url"]
 
 
-@pytest.fixture(scope="session", autouse=True)
+@pytest.fixture(scope="session")
 def get_token(base_url):
     print("用例开始测试")
     resp = requests.request(
